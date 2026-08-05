@@ -5,6 +5,18 @@
 
 soles = float(input("Ingrese la cantidad en soles: "))
 
-dolares = soles / 3.60
+print("1. Dólares")
+print("2. euros")
 
-print("Equivale a", dolares, "dólares.")
+opcion = input("Selecione una opción: ")
+
+if opcion == "1":
+    dolares = soles/3.60
+    print("Equivale a ", dolares, "dolares.")
+    
+elif opcion == "2":
+    euros = soles/4.20
+    print("Equivale a ", euros, "euros.")
+
+else:
+    print("Opción no válida")
